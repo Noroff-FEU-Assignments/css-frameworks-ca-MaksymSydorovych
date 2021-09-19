@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+				  <a class="navbar-brand navbar__brand" href="index.html">The YAY Company</a>
+				  <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+					 <ul class="navbar-nav navbar__nav me-auto mb-5 mb-lg-0">
+						<li class="nav-item navbar__nav--item">
+						  <a class="nav-link active navbar__nav--link navbar__nav--active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item navbar__nav--item">
+						  <a class="nav-link navbar__nav--link" href="news.html">News</a>
+						</li>
+						<li class="nav-item navbar__nav--item">
+							<a class="nav-link navbar__nav--link" href="contact.html">Contact</a>
+						 </li>
+						 </ul>
+					 <form class="d-flex navbar__form pr-0">
+						<input class="form-control navbar__form--input" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success navbar__form--button" type="submit">Go</button>
+					 </form>
+				  </div>
+				</div>
+			 </nav>
+			 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel__button" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="carousel__button" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="carousel__button" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active carousel__item">
+					  <img src="./images/carousel-1.jpg" class="d-block w-100 carousel__item--image" alt="...">
+					</div>
+					<div class="carousel-item carousel__item">
+					  <img src="./images/carousel-2.jpg" class="d-block w-100 arousel__item--image" alt="...">
+					</div>
+					<div class="carousel-item carousel__item">
+					  <img src="./images/carousel-3.jpg" class="d-block w-100 carousel__item--image" alt="...">
+					</div>
+				 </div>
+			
+		
+	</header>
+
+	<main>
+		<div class="container headline">
+			<h1>We do YAY things</h1>
+			<p>Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero.
+				 Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet,
+				 consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec
+				 mi orci, sollicitudin in luctus a, varius eget massa.</p>
+	  </div>
+
+ 
+	 <div class="container responsive-tabs homeTabs">
+		<ul class="nav nav-tabs" role="tablist">
+			 <li class="nav-item">
+				  <a id="tab-A" href="#pane-A" class="nav-link active homeTabs__name" data-bs-toggle="tab" role="tab">First</a>
+			 </li>
+			 <li class="nav-item">
+				  <a id="tab-B" href="#pane-B" class="nav-link homeTabs__name" data-bs-toggle="tab" role="tab">Second</a>
+			 </li>
+			 <li class="nav-item">
+				  <a id="tab-C" href="#pane-C" class="nav-link homeTabs__name" data-bs-toggle="tab" role="tab">Third</a>
+			 </li>
+		</ul>
+
+		<div id="content" class="tab-content homeTabs__content" role="tablist">
+			 <div id="pane-A" class="card tab-pane fade show active homeTabs__card" role="tabpanel" aria-labelledby="tab-A">
+				  <div class="card-header" role="tab" id="heading-A">
+						<h5 class="mb-0 homeTabs__header">
+							 <a data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+								  First
+							 </a>
+						</h5>
+				  </div>
+				  <div id="collapse-A" class="collapse show" data-bs-parent="#content" role="tabpanel"
+						aria-labelledby="heading-A">
+						<div class="card-body "><div class="homeTabs__content--text"><p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet
+							a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus.1
+							Sed condimentum mattis rhoncus.</p><img class="homeTabs__content--img" src="./images/tab-1.jpg" alt=".."/><p class="icon-share homeTabs__content--share">SHARE <i class="fab fa-facebook-f ml-1"></i>  <i class="fab fa-twitter ml-1"></i></p></div></div>
+				  </div>
+			 </div>
+
+			 <div id="pane-B" class="card tab-pane fade homeTabs__card" role="tabpanel" aria-labelledby="tab-B">
+				  <div class="card-header homeTabs__header" role="tab" id="heading-B">
+						<h5 class="mb-0">
+							 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false"
+								  aria-controls="collapse-B">
+								  Second
+							 </a>
+						</h5>
+				  </div>
+				  <div id="collapse-B" class="collapse" data-bs-parent="#content" role="tabpanel"
+						aria-labelledby="heading-B">
+						<div class="card-body "><div class="homeTabs__content--text"><p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet
+							a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus.1
+							Sed condimentum mattis rhoncus.</p><img class="homeTabs__content--img" src="./images/tab-2.jpg" alt=".."/><p class="icon-share homeTabs__content--share">SHARE <i class="fab fa-facebook-f ml-1"></i>  <i class="fab fa-twitter ml-1"></i></p></div></div>
+				  </div>
+			 </div>
+
+			 <div id="pane-C" class="card tab-pane fade homeTabs__card" role="tabpanel" aria-labelledby="tab-C">
+				  <div class="card-header homeTabs__header" role="tab" id="heading-C">
+						<h5 class="mb-0">
+							<a class="collapsed" data-bs-toggle="collapse" href="#collapse-C" aria-expanded="true" aria-controls="collapse-C">
+								  Third
+							 </a>
+						</h5>
+				  </div>
+				  <div id="collapse-C" class="collapse" data-bs-parent="#content" role="tabpanel"
+						aria-labelledby="heading-C">
+						<div class="card-body"><div class="homeTabs__content--text"><p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet
+							a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus.1
+							Sed condimentum mattis rhoncus.</p><img class="homeTabs__content--img" src="./images/tab-3.jpg" alt=".."/><p class="icon-share homeTabs__content--share">SHARE <i class="fab fa-facebook-f ml-1"></i>  <i class="fab fa-twitter ml-1"></i></p></div></div>
+				  </div>
+			 </div>
+		</div>
+  </div>
+
+	</main>
+
+
+	<footer>
+		<div class="footer">
+	<div class="footer__socialMedia">
+		 <i class="fab fa-vimeo-v footer__socialMedia--icons"></i>
+		 <i class="fab fa-youtube footer__socialMedia--icons"></i>
+	</div>
+	<div class="row footer__text">
+	<div class="col-6 footer__email">
+	 <p>hello@yay.com</p>
+
+</div>
+	<div class="col-6 justify-content-end footer__copyright">
+		 <p>Copyright 2020</p>
+	</div>
+</div>
+</div>
+
+</footer>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>

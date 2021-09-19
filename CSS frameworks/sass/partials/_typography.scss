@@ -1,0 +1,25 @@
+h1,
+h2 {
+  font-family: $secondary-font;
+  color: $primary !important;
+}
+h1 {
+  font-size: 34px;
+  text-align: center;
+}
+h5 {
+  font-size: 20px;
+}
+
+p {
+  color: $text-colour;
+  font-size: 16px;
+}
+body {
+  font-family: $primary-font;
+}
+
+.btn__link,
+.tab__link {
+  color: $primary !important;
+}

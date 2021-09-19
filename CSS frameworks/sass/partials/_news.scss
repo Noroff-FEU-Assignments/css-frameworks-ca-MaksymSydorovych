@@ -1,0 +1,38 @@
+.card {
+  border-radius: 10px;
+  &__container {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    border-radius: 10px 10px 0 0;
+  }
+  &__body {
+    margin: 10px 10px;
+    display: block;
+  }
+  &__btn {
+    background: $text-colour;
+    border: none;
+    position: relative;
+    height: 46px;
+    width: 90%;
+    border-radius: 4px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 88%;
+      height: 100%;
+      background: $primary;
+      border-radius: 4px;
+    }
+    &:after {
+      content: "MORE";
+      position: absolute;
+      left: 40%;
+    }
+  }
+}

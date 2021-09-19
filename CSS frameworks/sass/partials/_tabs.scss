@@ -1,0 +1,49 @@
+.homeTabs {
+  margin-top: 40px;
+  &__name {
+    color: $primary !important;
+    font-size: 19px !important;
+    border-bottom: none !important;
+    font-family: $primary !important;
+  }
+
+  &__content {
+    background: $secondary;
+    border-radius: 0 12px 12px 12px !important;
+    padding: 2em;
+
+    &--img {
+      width: 100%;
+    }
+
+    &--share {
+      color: black;
+    }
+  }
+  .active {
+    color: $text-colour !important;
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+.responsive-tabs .nav-tabs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .responsive-tabs .nav-tabs {
+    display: flex;
+  }
+
+  .responsive-tabs .card {
+    border: none;
+  }
+
+  .responsive-tabs .card .card-header {
+    display: none;
+  }
+
+  .responsive-tabs .card .collapse {
+    display: block;
+  }
+}

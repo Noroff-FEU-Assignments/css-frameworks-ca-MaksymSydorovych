@@ -1,0 +1,15 @@
+.contact {
+  max-width: 1140px;
+  margin: 50px auto;
+
+  &__icons {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact h2 {
+    padding-left: 30px;
+  }
+}

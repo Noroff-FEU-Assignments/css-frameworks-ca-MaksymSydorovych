@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+				  <a class="navbar-brand navbar__brand" href="index.html">The YAY Company</a>
+				  <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+					 <ul class="navbar-nav navbar__nav me-auto mb-5 mb-lg-0">
+						<li class="nav-item navbar__nav--item">
+						  <a class="nav-link active navbar__nav--link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item navbar__nav--item">
+							<a class="nav-link active navbar__nav--link" href="news.html">News</a>
+						</li>
+						<li class="nav-item navbar__active">
+							<a class="nav-link navbar__nav--link  navbar__nav--active" aria-current="page" href="contact.html">Contact</a>
+						 </li>
+						 </ul>
+					 <form class="d-flex navbar__form pr-0">
+						<input class="form-control navbar__form--input" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success navbar__form--button" type="submit">Go</button>
+					 </form>
+				  </div>
+				</div>
+			 </nav>
+			 
+			
+		
+	</header>
+
+	<main>
+		<div class="container wrapper my-2">
+
+			<div class="contact d-md-flex">
+				 <div class="icon-flex order-md-2 contact__info">
+					  <p><i class="fas fa-envelope contact__icons"></i> hello@yay.com</p>
+					  <p><i class="fas fa-phone contact__icons"></i> 123 456 7890</p>
+					  <div class="d-flex">
+					  <p><i class="fas fa-map-marker-alt contact__icons"></i> 
+					  <ul class="ml-5">
+							 <li>123 Some Street</li>
+							 <li>Somewhere</li>
+							 <li>Some City</li>
+							 <li>10000</li>
+							</ul>
+					  </p>
+					  </div>
+				 </div>
+ 
+				 <div class="form-container order-md-1">
+					  <h2>Submit your details</h2>
+	  
+					  <form class="my-3 contact__form">
+							<div class="form-group mb-4">
+								 <label for="name">Name</label>
+								 <input type="text" class="form-control contact__form--control">
+							</div>
+							<div class="form-group mb-4">
+								 <label for="exampleInputEmail1">Email</label>
+								 <input type="email" class="form-control contact__form--control" aria-describedby="emailHelp">
+							</div>
+							<label for="basic-url">Website</label>
+							<div class="input-group">
+								 <div class="input-group-prepend">
+									  <span class="input-group-text contact__form--https d-none d-md-block" id="basic-addon3">https://</span>
+								 </div>
+								 <input type="text" class="form-control contact__form--control" id="basic-url" aria-describedby="basic-addon3">
+							</div>
+							<div class="form-group mb-4">
+								 <label for="exampleFormControlTextarea1">Message</label>
+								 <textarea class="form-control contact__form--control" rows="6"></textarea>
+							  </div>
+							  
+                        <div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input my-error">
+									<label class="custom-control-label">Allow us to sell your personal details to
+										 whomever we want</label>
+							<button type="submit" class="btn btn-primary contact__form--button">Submit</button>
+					  </form>
+				 </div>
+	  
+				 
+			</div>
+ 
+ 
+		  
+	  </div>
+ 
+
+	</main>
+
+
+	<footer>
+		<div class="footer">
+	<div class="footer__socialMedia">
+		 <i class="fab fa-vimeo-v footer__socialMedia--icons"></i>
+		 <i class="fab fa-youtube footer__socialMedia--icons"></i>
+	</div>
+	<div class="row footer__text">
+	<div class="col-6 footer__email">
+	 <p>hello@yay.com</p>
+
+</div>
+	<div class="col-6 justify-content-end footer__copyright">
+		 <p>Copyright 2020</p>
+	</div>
+</div>
+</div>
+
+</footer>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>

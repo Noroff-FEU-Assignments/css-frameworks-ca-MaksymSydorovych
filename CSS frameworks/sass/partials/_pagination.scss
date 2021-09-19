@@ -1,0 +1,11 @@
+.pagination {
+  margin: 20px 0;
+}
+.page__link {
+  border: solid 1px $primary !important;
+  color: $primary !important;
+}
+.page__active {
+  background: $primary !important;
+  border: 1px solid $primary !important;
+}
