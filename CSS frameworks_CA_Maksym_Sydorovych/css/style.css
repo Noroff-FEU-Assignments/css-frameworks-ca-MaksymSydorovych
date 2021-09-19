@@ -126,16 +126,34 @@ main {
 }
 
 .homeTabs__content--img {
-  width: 100%;
+  width: 322px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin-top: -7.7em;
 }
 
 .homeTabs__content--share {
   color: black;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.homeTabs__content--paragraph {
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 .homeTabs .active {
   color: #767676 !important;
   border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  grid-gap: 40px;
 }
 
 .responsive-tabs .nav-tabs {
@@ -156,6 +174,12 @@ main {
   }
   .responsive-tabs .card .collapse {
     display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .homeTabs__content--img {
+    margin-top: -9em;
   }
 }
 
@@ -381,6 +405,9 @@ body {
     border-bottom: none;
     margin: 0;
   }
+  .card-body {
+    display: block;
+  }
   .homeTabs {
     padding: 0.5em;
   }
@@ -399,6 +426,7 @@ body {
   }
   .homeTabs__content--img {
     margin-top: 15px;
+    width: 100%;
   }
   .homeTabs__card {
     background: #efefef !important;
@@ -407,7 +435,6 @@ body {
   .homeTabs__header {
     background: #ffffff;
     border: none;
-    border-radius: 10px 10px 10px 10px !important;
   }
 }
 

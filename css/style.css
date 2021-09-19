@@ -108,54 +108,12 @@ main {
   background-color: #e92569 !important;
 }
 
-.homeTabs {
-  margin-top: 40px;
-}
-
-.homeTabs__name {
-  color: #e92569 !important;
-  font-size: 19px !important;
-  border-bottom: none !important;
-  font-family: #e92569 !important;
-}
-
-.homeTabs__content {
-  background: #ffffff;
-  border-radius: 0 12px 12px 12px !important;
-  padding: 2em;
-}
-
-.homeTabs__content--img {
-  width: 100%;
-}
-
-.homeTabs__content--share {
-  color: black;
-}
-
-.homeTabs .active {
-  color: #767676 !important;
-  border-radius: 12px 12px 0 0;
-}
-
-.responsive-tabs .nav-tabs {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .responsive-tabs .nav-tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .responsive-tabs .card {
-    border: none;
-  }
-  .responsive-tabs .card .card-header {
-    display: none;
-  }
-  .responsive-tabs .card .collapse {
-    display: block;
+@media (max-width: 767px) {
+  .card-body {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 3fr 9fr;
+        grid-template-columns: 3fr 9fr;
   }
 }
 
@@ -407,7 +365,6 @@ body {
   .homeTabs__header {
     background: #ffffff;
     border: none;
-    border-radius: 10px 10px 10px 10px !important;
   }
 }
 

@@ -13,19 +13,30 @@
     padding: 2em;
 
     &--img {
-      width: 100%;
+      width: 322px;
+      grid-column: 1;
+      margin-top: -7.7em;
     }
 
     &--share {
       color: black;
+      grid-column: 2;
+    }
+    &--paragraph {
+      grid-column: 2;
     }
   }
+
   .active {
     color: $text-colour !important;
     border-radius: 12px 12px 0 0;
   }
 }
-
+.card-body {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 40px;
+}
 .responsive-tabs .nav-tabs {
   display: none;
 }
@@ -45,5 +56,10 @@
 
   .responsive-tabs .card .collapse {
     display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .homeTabs__content--img {
+    margin-top: -9em;
   }
 }
