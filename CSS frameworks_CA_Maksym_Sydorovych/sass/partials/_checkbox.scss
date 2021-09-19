@@ -1,0 +1,32 @@
+.custom-control-label {
+  font-size: 13px;
+  margin-left: 60px;
+  position: relative;
+}
+.custom-control-label::before {
+  content: "";
+  background-color: $primary;
+  left: -4.6em;
+  top: -0.3em;
+  width: 34px;
+  height: 33px;
+  border: $primary;
+  position: absolute;
+}
+
+.custom-control-input {
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  z-index: 2;
+  border: none;
+  opacity: 0.1;
+}
+.custom-control-input:checked {
+  opacity: 3;
+}
+@media (max-width: 768px) {
+  .custom-control-label::before {
+    top: 0;
+  }
+}

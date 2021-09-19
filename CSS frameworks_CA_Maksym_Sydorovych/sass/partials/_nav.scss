@@ -1,0 +1,64 @@
+.navbar {
+  background: $background-nav;
+  width: 100%;
+
+  &__brand {
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: $primary !important;
+    padding-left: 75px;
+  }
+  &__nav {
+    color: black !important;
+    padding-left: 38px;
+
+    &--link {
+      font-family: $primary-font;
+      font-size: 16px;
+    }
+    &__active {
+      background: $secondary;
+    }
+    &--active {
+      background-color: $secondary;
+    }
+  }
+  &__toggler {
+    border: none;
+    color: $text-colour !important;
+  }
+  &__toggler:focus {
+    box-shadow: none;
+  }
+  &__form {
+    &--input {
+      font-size: 15px;
+      padding-right: 65px;
+    }
+    &--button {
+      font-size: 16px;
+      font-family: $primary-font;
+      width: 43px;
+      background: $primary;
+      color: white;
+      border: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    &__brand {
+      padding-left: 30px;
+    }
+    &__nav {
+      padding-left: 30px;
+    }
+    &__form {
+      padding-left: 20px;
+      width: 353px;
+      margin-bottom: 44px;
+    }
+  }
+}

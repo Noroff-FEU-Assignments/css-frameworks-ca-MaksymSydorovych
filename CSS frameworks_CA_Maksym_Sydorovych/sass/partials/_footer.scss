@@ -1,0 +1,32 @@
+.footer {
+  color: $text-colour;
+  font-size: 16px;
+  margin: 20% auto;
+  background: $secondary;
+  padding: 45px 35px;
+  &__socialMedia {
+    text-align: center;
+    &--icons {
+      font-size: 40px;
+      margin: 5px;
+    }
+  }
+  &__copyright {
+    text-align: end;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    text-align: center;
+    max-height: 53px;
+    padding: 0 75px;
+    &__socialMedia {
+      text-align: start;
+    }
+    &__text {
+      padding: 10px 0;
+    }
+  }
+}

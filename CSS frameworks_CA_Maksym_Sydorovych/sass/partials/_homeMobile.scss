@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+  .responsive-tabs .tab-pane {
+    display: block !important;
+    opacity: 1;
+  }
+  .collapse.show .card-body {
+    border-top: 1px solid $primary !important;
+  }
+  .card-header {
+    background: $secondary !important;
+    border-bottom: none;
+    margin: 0;
+  }
+  .homeTabs {
+    padding: 0.5em;
+    &__content {
+      padding: 0;
+      a {
+        color: $primary !important;
+        font-size: 19px !important;
+        text-decoration: none;
+        background: $secondary !important;
+      }
+      &--share {
+        text-align: center;
+        margin-top: 15px;
+      }
+      &--img {
+        margin-top: 15px;
+      }
+    }
+    &__card {
+      background: $background-nav !important;
+      border: none;
+    }
+    &__header {
+      background: $secondary;
+      border: none;
+      border-radius: 10px 10px 10px 10px !important;
+    }
+  }
+}

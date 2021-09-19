@@ -1,0 +1,13 @@
+.carousel {
+  z-index: 1;
+  button {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: $secondary !important;
+    opacity: 1 !important;
+    z-index: 10;
+  }
+  .active {
+    background-color: $primary !important;
+  }
+}
